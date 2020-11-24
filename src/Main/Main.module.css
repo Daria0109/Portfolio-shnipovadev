@@ -1,0 +1,29 @@
+.mainBlock {
+  height: 100vh;
+  background-color: #ffdae0;
+}
+.greeting {
+  width: 400px;
+  background-color: lavender;
+}
+.photo {
+  width: 300px;
+  height: 400px;
+  background-color: lavender;
+}
+@media (max-width: 900px) {
+ .mainContainer {
+   justify-content: center;
+ }
+}
+@media (max-width: 360px) {
+  .photo {
+    width: 250px;
+  }
+  .greeting {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
+

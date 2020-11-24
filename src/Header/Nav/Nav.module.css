@@ -1,0 +1,13 @@
+.nav {
+  margin-left: auto;
+  width: 500px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link {
+  text-decoration: none;
+  color: darkred;
+  cursor: pointer;
+}
