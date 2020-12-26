@@ -1,0 +1,55 @@
+@import './src/SCSS/mixins';
+@import './src/SCSS/variables';
+
+input, textarea {
+  width: 100%;
+  display: block;
+  padding: 12px 0;
+  font-size: 16px;
+  height: auto;
+  font-family: $fontText;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: $secondColor;
+  color: $fontColor;
+  outline: none;
+}
+textarea {
+  resize: vertical;
+}
+input::placeholder, textarea::placeholder {
+  color: #94a2c6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  .rowForm {
+    flex-basis: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    .name {
+      flex-basis: 48%;
+    }
+    .email {
+      flex-basis: 48%;
+    }
+  }
+  .sendButton {
+    width: 100%;
+    background: $thirdColor;
+    padding: 8px 30px;
+    border-radius: 4px;
+    @include font(14px, 200);
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+  }
+}

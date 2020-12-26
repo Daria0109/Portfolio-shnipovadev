@@ -1,0 +1,53 @@
+@import './src/SCSS/mixins.scss';
+@import './src/SCSS/variables.scss';
+
+
+
+.contactsBlock {
+  @include block(70%);
+  border: 1px solid;
+  .title {
+    @include blockTitle();
+  }
+
+  .contacts {
+    @include flexBlockForCards();
+
+    .formBox {
+      @include card(48.5%);
+      padding: 20px;
+
+      .socialLinks {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 20px;
+        .linkItem {
+          margin-right: 15px;
+          .link {
+            display: block;
+            width: 45px;
+            height: 45px;
+            text-align: center;
+            line-height: 55px;
+            border-radius: 4px;
+            background: rgba(66, 133, 244, 0.1);
+          }
+        }
+      }
+    }
+
+    .mapBox {
+      @include card(48.5%);
+      padding: 20px;
+    }
+  }
+
+}
+
+
+@media (max-width: 1205px) {
+  .contactsBlock {
+    @include block(80%);
+  }
+}

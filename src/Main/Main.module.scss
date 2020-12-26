@@ -1,0 +1,138 @@
+@import './src/SCSS/variables';
+@import './src/SCSS/mixins';
+
+.mainBlock {
+  @include block(70%);
+  border: 1px solid;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-bottom: 60px;
+
+  .greeting {
+    @include flexBox(space-between);
+
+    .photo {
+      flex-shrink: 0;
+      background: $secondColor;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 200%;
+        top: -100px;
+        left: -100px;
+        background: $thirdColor;
+        transform: rotate(-30deg);
+      }
+
+      img {
+        display: block;
+        max-width: 360px;
+        max-height: 550px;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    .textRight {
+      margin-left: 30px;
+
+      .hello {
+        background: $thirdColor;
+        @include font(16px, 600);
+        text-transform: uppercase;
+        padding: 3px 10px;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          content: '';
+          bottom: -10px;
+          left: 5px;
+          width: 0;
+          height: 0;
+          border-top: 0px solid transparent;
+          border-left: 10px solid #4c84ff;
+          border-bottom: 10px solid transparent;
+        }
+      }
+
+      .name {
+        @include fontTitle(40px, 700);
+        margin-top: 20px;
+        margin-bottom: 0;
+
+        span {
+          color: $thirdColor;
+        }
+      }
+
+      .positionTitle {
+        @include fontTitle(22px, 700);
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+
+      .info {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: $fontColor;
+        font-weight: 400;
+      }
+
+      .buttons {
+        display: flex;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1205px) {
+  .mainBlock {
+    @include block(80%);
+
+    .buttons {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+
+@media (max-width: 1057px) {
+    img {
+      width: 305px;
+      height: 470px;
+    }
+  }
+
+@media (max-width: 990px) {
+  .mainBlock {
+    @include block(80%);
+
+    .greeting {
+      flex-direction: column;
+
+      img {
+        width: 360px;
+        height: 550px;
+      }
+      .textRight {
+        margin-left: 0px;
+        .buttons {
+          flex-direction: row;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
+
+

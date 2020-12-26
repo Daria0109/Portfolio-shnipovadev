@@ -1,0 +1,31 @@
+@import './src/SCSS/mixins';
+@import './src/SCSS/variables';
+
+.buttonLink {
+  text-decoration: none;
+  .button {
+    @include flexBox(initial);
+    background: $thirdColor;
+    padding: 15px 30px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+
+    span {
+      line-height: 0;
+
+      &:first-child {
+        margin-right: 5px;
+      }
+    }
+
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    .name {
+      @include font(14px, 200);
+      line-height: 0;
+      text-transform: uppercase;
+    }
+  }
+}

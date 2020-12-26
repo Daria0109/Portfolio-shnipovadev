@@ -1,0 +1,76 @@
+@import './src/SCSS/variables';
+@import './src/SCSS/mixins';
+
+.project {
+  @include card(32%);
+  overflow: hidden;
+
+  .imageBox {
+    overflow: hidden;
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .details {
+    padding: 40px 20px 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .link {
+      position: absolute;
+      width: 70%;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -30px;
+      background: $secondColor;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      padding: 15px 30px;
+      border-radius: 4px;
+      @include font(14px, 200);
+      line-height: 1;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      @include fontTitle(18px, 600);
+      line-height: 28px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .text {
+      @include font(16px, 400);
+      line-height: 1.4;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .codeLink {
+      align-self: flex-end;
+      @include font(12px, 200);
+      color: #94a2c6;
+      line-height: 1;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid #94a2c6;
+      border-radius: 4px;
+      padding: 8px 16px;
+    }
+  }
+}
+
+
+@media (max-width: 1057px) {
+  .project {
+    @include card(45%);
+  }
+}

@@ -1,0 +1,21 @@
+@import './src/SCSS/variables';
+@import './src/SCSS/mixins';
+
+.projectsBlock {
+  @include block(80%);
+  border: 1px solid;
+  .title {
+    @include blockTitle();
+  }
+  .projects {
+    @include flexBlockForCards();
+  }
+}
+
+
+
+@media (max-width: 780px) {
+  .projects {
+    justify-content: center;
+  }
+}

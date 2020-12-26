@@ -1,20 +1,21 @@
-import React from 'react';
-import Header from "./Header/Header";
+import React, {useState} from 'react';
 import Main from "./Main/Main";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
-import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
+import ToggleMenu from "./ToggleMenu/ToggleMenu";
+import Contacts from "./Contacts/Contacts";
 
 function App() {
+  const [menu, setMenu] = useState(false);
   return (
     <div className="App">
-      <Header/>
+      <ToggleMenu menu={menu} setMenu={setMenu}/>
       <Main/>
       <Skills/>
       <Projects/>
       <Contacts/>
-      <Footer/>
+      {/*<Footer/>*/}
     </div>
   );
 }

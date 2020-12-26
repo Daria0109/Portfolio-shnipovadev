@@ -1,0 +1,21 @@
+@import './src/SCSS/variables';
+@import './src/SCSS/mixins';
+
+.skillsBlock {
+  @include block(80%);
+  border: 1px solid;
+
+  .title {
+    @include blockTitle();
+  }
+
+  .skills {
+    @include flexBlockForCards();
+  }
+}
+
+@media (max-width: 780px) {
+  .skills {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,39 @@
+@import './src/SCSS/mixins';
+@import './src/SCSS/variables';
+
+.skill {
+  @include card(32%);
+  text-align: center;
+  padding: 25px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  .title {
+    @include fontTitle(20px, 500);
+    line-height: 30px;
+    margin-top: 17px;
+    margin-bottom: 12px;
+
+  }
+  .info {
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $fontColor;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 780px) {
+  .skill {
+    width: 350px;
+  }
+}
+
+@media (max-width: 540px) {
+  .skill {
+    width: 280px;
+  }
+}

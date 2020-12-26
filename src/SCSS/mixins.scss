@@ -1,0 +1,57 @@
+@import './variables';
+
+
+@mixin font ($fontSize, $fontWeight) {
+  font-family: $fontText;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: 26px;
+  color: #fff;
+}
+
+@mixin fontTitle($fontSize, $fontWeight) {
+  font-family: $fontTitle;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $fontColor;
+  text-transform: uppercase;
+}
+
+@mixin block($width) {
+  min-height: 100vh;
+  width: $width;
+  margin: 0 auto;
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flexBlockForCards() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@mixin blockTitle() {
+  @include fontTitle(45px, 700);
+  line-height: 55px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  span {
+    color: $thirdColor;
+  }
+}
+
+@mixin card($flexBasis) {
+  flex-basis: $flexBasis;
+  background: $secondColor;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+@mixin flexBox($justify) {
+  display: flex;
+  align-items: center;
+  justify-content: $justify;
+}
