@@ -26,14 +26,23 @@
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1020px) {
   .skill {
-    width: 350px;
+    @include card(47%);
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 750px) {
   .skill {
-    width: 280px;
+    @include card(380px);
+  }
+}
+
+@media (max-width: 450px) {
+  .skill {
+    .info {
+      font-size: 15px;
+      font-weight: 300;
+    }
   }
 }

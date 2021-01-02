@@ -2,10 +2,10 @@
 @import './src/SCSS/variables.scss';
 
 
-
 .contactsBlock {
-  @include block(70%);
+  @include wrapper();
   border: 1px solid;
+
   .title {
     @include blockTitle();
   }
@@ -22,8 +22,10 @@
         align-items: center;
         justify-content: flex-start;
         margin-top: 20px;
+
         .linkItem {
           margin-right: 15px;
+
           .link {
             display: block;
             width: 45px;
@@ -48,6 +50,34 @@
 
 @media (max-width: 1205px) {
   .contactsBlock {
-    @include block(80%);
+
+  }
+}
+
+@media (max-width: 990px) {
+  .contactsBlock {
+    .contacts {
+      justify-content: center;
+      .formBox {
+        @include card(450px);
+      }
+      .mapBox {
+        @include card(450px);
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .contactsBlock {
+
+  }
+}
+
+@media (max-width: 400px) {
+  .contactsBlock {
+    .title {
+      font-size: 40px;
+    }
   }
 }

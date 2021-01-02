@@ -17,14 +17,14 @@
   text-transform: uppercase;
 }
 
-@mixin block($width) {
-  min-height: 100vh;
-  width: $width;
+@mixin wrapper() {
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 70px 0;
+  padding: 70px 20px;
   display: flex;
+  //align-items: center;
   flex-direction: column;
-  align-items: center;
 }
 
 @mixin flexBlockForCards() {
@@ -35,6 +35,7 @@
 
 @mixin blockTitle() {
   @include fontTitle(45px, 700);
+  align-self: center;
   line-height: 55px;
   margin-top: 0;
   margin-bottom: 12px;

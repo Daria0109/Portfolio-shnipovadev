@@ -2,20 +2,36 @@
 @import './src/SCSS/mixins';
 
 .projectsBlock {
-  @include block(80%);
+  @include wrapper();
   border: 1px solid;
+
   .title {
     @include blockTitle();
   }
+
   .projects {
     @include flexBlockForCards();
   }
 }
 
 
+@media (max-width: 800px) {
+  .projectsBlock {
+    .projects {
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .projectsBlock {
 
-@media (max-width: 780px) {
-  .projects {
-    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .projectsBlock {
+    .title {
+      font-size: 40px;
+    }
   }
 }

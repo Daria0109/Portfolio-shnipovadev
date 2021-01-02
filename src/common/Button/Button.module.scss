@@ -1,14 +1,18 @@
 @import './src/SCSS/mixins';
 @import './src/SCSS/variables';
 
-.buttonLink {
-  text-decoration: none;
+
   .button {
     @include flexBox(initial);
     background: $thirdColor;
-    padding: 15px 30px;
+    padding: 13px 28px;
+    border: 1px solid $thirdColor;
     border-radius: 4px;
     margin-bottom: 15px;
+    &:hover, &:active {
+      background: $secondColor;
+      transition-duration: 0.3s;
+    }
 
     span {
       line-height: 0;
@@ -28,4 +32,3 @@
       text-transform: uppercase;
     }
   }
-}

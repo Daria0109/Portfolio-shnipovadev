@@ -1,6 +1,10 @@
 @import './SCSS/variables.scss';
 @import './SCSS/mixins.scss';
 
+html {
+  scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
+
 * {
   box-sizing: border-box;
 }

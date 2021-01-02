@@ -5,7 +5,7 @@ import {SiCss3, SiHtml5, SiJavascript, SiReact, SiRedux, SiTypescript} from "rea
 
 function Skills() {
   return (
-    <div className={s.skillsBlock}>
+    <div className={s.skillsBlock} id='Skills'>
         <h2 className={s.title}>My <span>Skills</span></h2>
         <div className={s.skills}>
           <Skill title='HTML5' icon={<SiHtml5 color={'#dd512a'} size={'70px'}/>} description='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'/>

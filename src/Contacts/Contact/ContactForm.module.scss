@@ -5,7 +5,7 @@ input, textarea {
   width: 100%;
   display: block;
   padding: 12px 0;
-  font-size: 16px;
+  font-size: 15px;
   height: auto;
   font-family: $fontText;
   border-top: 0;
@@ -44,12 +44,31 @@ input::placeholder, textarea::placeholder {
   .sendButton {
     width: 100%;
     background: $thirdColor;
-    padding: 8px 30px;
+    border: 1px solid $thirdColor;
+    padding: 6px 28px;
     border-radius: 4px;
     @include font(14px, 200);
     text-transform: uppercase;
     outline: none;
-    border: none;
     margin-top: 10px;
+    cursor: pointer;
+    &:hover, &:active {
+      background: $secondColor;
+      transition-duration: 0.5s;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .form {
+    .top {
+      flex-direction: column;
+      .name {
+        width: 100%;
+      }
+      .email {
+        width: 100%;
+      }
+    }
   }
 }

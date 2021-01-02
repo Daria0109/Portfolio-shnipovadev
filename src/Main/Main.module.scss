@@ -2,17 +2,25 @@
 @import './src/SCSS/mixins';
 
 .mainBlock {
-  @include block(70%);
+  @include wrapper();
   border: 1px solid;
-  flex-direction: row;
-  align-items: flex-end;
-  padding-bottom: 60px;
+  position: relative;
+
+  .fixedWrapper {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    right: 15px;
+    top: 15px;
+  }
 
   .greeting {
     @include flexBox(space-between);
 
     .photo {
       flex-shrink: 0;
+      max-width: 430px;
+      width: 100%;
       background: $secondColor;
       padding: 20px;
       border-radius: 10px;
@@ -32,8 +40,8 @@
 
       img {
         display: block;
-        max-width: 360px;
-        max-height: 550px;
+        width: 100%;
+        height: auto;
         border-radius: 10px;
         position: relative;
         z-index: 1;
@@ -41,7 +49,7 @@
     }
 
     .textRight {
-      margin-left: 30px;
+      margin-left: 20px;
 
       .hello {
         background: $thirdColor;
@@ -88,6 +96,9 @@
 
       .buttons {
         display: flex;
+        .buttonLink {
+          text-decoration: none;
+        }
       }
     }
   }
@@ -96,37 +107,78 @@
 
 @media (max-width: 1205px) {
   .mainBlock {
-    @include block(80%);
 
-    .buttons {
-      flex-direction: column;
-      align-items: flex-start;
-    }
   }
 }
 
-@media (max-width: 1057px) {
-    img {
-      width: 305px;
-      height: 470px;
-    }
-  }
-
 @media (max-width: 990px) {
   .mainBlock {
-    @include block(80%);
+
 
     .greeting {
       flex-direction: column;
 
-      img {
-        width: 360px;
-        height: 550px;
+      .photo {
+        max-width: 450px;
       }
+
       .textRight {
         margin-left: 0px;
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .mainBlock {
+    padding-bottom: 30px;
+
+    .greeting {
+      .photo {
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .mainBlock {
+    .greeting {
+      .photo {
+        padding: 10px;
+        max-width: 350px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .mainBlock {
+    .greeting {
+      .photo {
+        max-width: 300px;
+      }
+
+      .textRight {
+        .name {
+          @include fontTitle(26px, 700);
+        }
+
+        .positionTitle {
+          @include fontTitle(18px, 700);
+          margin-top: 15px;
+        }
+
+        .info {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          font-size: 15px;
+          font-weight: 300;
+        }
+
         .buttons {
-          flex-direction: row;
+          flex-direction: column;
           align-items: flex-start;
         }
       }
