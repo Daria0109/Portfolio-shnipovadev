@@ -3,7 +3,6 @@
 
 .skillsBlock {
   @include wrapper();
-  border: 1px solid;
 
   .title {
     @include blockTitle();
@@ -11,23 +10,13 @@
 
   .skills {
     @include flexBlockForCards();
-  }
-}
-
-@media (max-width: 750px) {
-  .skillsBlock {
-
-    .skills {
+    @media (max-width: 750px) {
       justify-content: center;
     }
   }
 }
 
-@media (max-width: 400px) {
-  .skillsBlock {
-    .title {
-      font-size: 40px;
-    }
-  }
-}
+
+
+
 

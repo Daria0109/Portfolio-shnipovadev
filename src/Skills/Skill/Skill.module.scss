@@ -9,40 +9,35 @@
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+  @media (max-width: 1020px) {
+    @include card(47%);
+  }
+  @media (max-width: 750px) {
+    @include card(380px);
+  }
 
   .title {
     @include fontTitle(20px, 500);
     line-height: 30px;
     margin-top: 17px;
     margin-bottom: 12px;
-
   }
+
   .info {
     align-items: center;
     margin-top: 0;
     margin-bottom: 0;
     color: $fontColor;
     line-height: 1.4;
-  }
-}
-
-@media (max-width: 1020px) {
-  .skill {
-    @include card(47%);
-  }
-}
-
-@media (max-width: 750px) {
-  .skill {
-    @include card(380px);
-  }
-}
-
-@media (max-width: 450px) {
-  .skill {
-    .info {
+    @media (max-width: 450px) {
       font-size: 15px;
       font-weight: 300;
     }
   }
 }
+
+
+
+
+
+

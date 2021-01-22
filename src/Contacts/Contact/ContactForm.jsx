@@ -2,7 +2,7 @@ import React from "react";
 import s from './ContactForm.module.scss'
 
 
-const ContactForm = () => {
+const ContactForm = React.memo(() => {
   return <form className={s.form}>
     <div className={`${s.rowForm} ${s.top}`}>
       <input className={`${s.name} ${s.input}`} type="text" name="name" placeholder='Name'/>
@@ -20,5 +20,5 @@ const ContactForm = () => {
     <button className={s.sendButton}>Send Message</button>
 
   </form>
-}
+})
 export default ContactForm;

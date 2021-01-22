@@ -1,14 +1,14 @@
 import React from 'react';
 import s from './Skill.module.scss'
 
-function Skill(props) {
+const Skill = React.memo(({title, icon, description}) => {
   return (
     <div className={s.skill}>
-        {props.icon}
-        <h3 className={s.title}>{props.title}</h3>
-        <p className={s.info}>{props.description}</p>
+        {icon}
+        <h3 className={s.title}>{title}</h3>
+        <p className={s.info}>{description}</p>
     </div>
   )
-}
+})
 
 export default Skill;

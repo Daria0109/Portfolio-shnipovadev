@@ -1,9 +1,9 @@
-import React, {useState, useCallback} from 'react';
+import React from 'react';
 import s from './Nav.module.scss';
+import MenuLink from "./MenuLink/MenuLink";
 
 
 const Nav = React.memo(({menuVisible, handleMenu, navLinks}) => {
-
   const menu = menuVisible ? `${s.menuArea} ${s.visible}` : `${s.menuArea}`
   const linkElements = navLinks.map(l => {
     const link = l.active ? `${s.navLink} ${s.active}` : `${s.navLink}`
@@ -26,11 +26,5 @@ const Nav = React.memo(({menuVisible, handleMenu, navLinks}) => {
     </div>
   )
 })
-
-const MenuLink = React.memo(({className, id, href, handleMenu, linkName}) => {
-  return <a className={className}
-            id={id}
-            href={href}
-            onClick={() => handleMenu(id)}>{linkName}</a>
-})
 export default Nav;
+

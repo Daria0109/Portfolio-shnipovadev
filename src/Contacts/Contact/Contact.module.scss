@@ -5,6 +5,12 @@
   @include card(31%);
   padding: 39px 20px 36px;
   text-align: center;
+  @media (max-width: 995px) {
+    @include card(0);
+    max-width: 450px;
+    width: 100%;
+  }
+
   .iconBox {
     width: 65px;
     height: 65px;
@@ -15,11 +21,13 @@
     margin: 0 auto 25px;
     background: rgba(66, 133, 244, 0.1);
   }
+
   .contactName {
     @include fontTitle(18px, 600);
     margin-top: 0;
     margin-bottom: 10px;
   }
+
   .contactInfo {
     margin-top: 0;
     margin-bottom: 0;
@@ -31,9 +39,5 @@
   }
 }
 
-@media (max-width: 990px) {
-  .contact {
-    @include card(450px)
-  }
-}
+
 

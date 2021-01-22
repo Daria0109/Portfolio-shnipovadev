@@ -1,27 +1,21 @@
 import React from 'react';
 import s from './Projects.module.scss';
 import Project from "./Project/Project";
+import {projects} from './projects-state'
 
-function Projects() {
-  return (
-    <div className={s.projectsBlock} id='Portfolio'>
-      <h2 className={s.title}>My <span>Projects</span></h2>
-        <div className={s.projects}>
-          <Project title='Project Name'
-                   text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'/>
-          <Project title='Project Name'
-                   text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'/>
-          <Project title='Project Name'
-                   text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'/>
-          <Project title='Project Name'
-                   text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'/>
-          <Project title='Project Name'
-                   text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'/>
-          <Project title='Project Name'
-                   text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...'/>
-        </div>
+const Projects = React.memo(() => {
+  const projectElements = projects.map(proj =>
+    <Project key={proj.title}
+             title={proj.title}
+             description={proj.description}
+             image={proj.projectImg}/>)
+
+  return <div className={s.projectsBlock} id='Portfolio'>
+    <h2 className={s.title}>My <span>Projects</span></h2>
+    <div className={s.projects}>
+      {projectElements}
     </div>
-  )
-}
+  </div>
+})
 
 export default Projects;

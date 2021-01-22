@@ -16,9 +16,11 @@ input, textarea {
   color: $fontColor;
   outline: none;
 }
+
 textarea {
   resize: vertical;
 }
+
 input::placeholder, textarea::placeholder {
   color: #94a2c6;
 }
@@ -26,21 +28,35 @@ input::placeholder, textarea::placeholder {
 .form {
   display: flex;
   flex-direction: column;
+
   .rowForm {
     flex-basis: 100%;
     padding-top: 7px;
     padding-bottom: 7px;
   }
+
   .top {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 990px) {
+      flex-direction: column;
+    }
+
     .name {
       flex-basis: 48%;
+      @media (max-width: 990px) {
+        width: 100%;
+      }
     }
+
     .email {
       flex-basis: 48%;
+      @media (max-width: 990px) {
+          width: 100%;
+      }
     }
   }
+
   .sendButton {
     width: 100%;
     background: $thirdColor;
@@ -52,6 +68,7 @@ input::placeholder, textarea::placeholder {
     outline: none;
     margin-top: 10px;
     cursor: pointer;
+
     &:hover, &:active {
       background: $secondColor;
       transition-duration: 0.5s;
@@ -59,16 +76,3 @@ input::placeholder, textarea::placeholder {
   }
 }
 
-@media (max-width: 990px) {
-  .form {
-    .top {
-      flex-direction: column;
-      .name {
-        width: 100%;
-      }
-      .email {
-        width: 100%;
-      }
-    }
-  }
-}

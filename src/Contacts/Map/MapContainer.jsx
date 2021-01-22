@@ -8,14 +8,15 @@ const mapState = {
 };
 
 
-const MapContainer = () => {
+const MapContainer = React.memo(() => {
   return <YMaps query={{ lang: "en_US"}}>
-    <Map width='100%'
+    <Map max-width='100%'
+         width='100%'
          height='100%'
          defaultState={mapState} >
     <Placemark geometry={mapState.center} options={{preset: 'islands#redDotIcon'}} />
     </Map>
   </YMaps>
-}
+})
 
 export default MapContainer;

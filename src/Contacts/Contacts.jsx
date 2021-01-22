@@ -1,14 +1,13 @@
+import React from "react";
 import s from "./Contacts.module.scss";
 import Contact from "./Contact/Contact";
-import {FaEnvelope, FaGithub, FaLinkedinIn, FaPhone, FaRocket, FaTelegramPlane} from "react-icons/all";
-import React from "react";
+import {FaEnvelope, FaGithub, FaLinkedinIn, FaPhone, FaRocket, FaTelegramPlane, SiCodewars} from "react-icons/all";
 import ContactForm from "./Contact/ContactForm";
-import MapContainer from "../Map/MapContainer";
+import MapContainer from "./Map/MapContainer";
 
 
-const Contacts = () => {
-  return (
-    <div className={s.contactsBlock} id='Contacts'>
+const Contacts = React.memo(() => {
+  return <div className={s.contactsBlock} id='Contacts'>
       <h2 className={s.title}>Contact <span>me</span></h2>
       <div className={s.contacts}>
         <Contact icon={<FaRocket color='#4285f4' size='25px'/>} name='My location:'
@@ -34,16 +33,18 @@ const Contacts = () => {
                 <FaTelegramPlane color='#4285f4' size='20px'/>
               </a>
             </li>
+            <li className={s.linkItem}>
+              <a className={s.link} href="https://www.codewars.com/users/Daria0109" target='_blank'>
+                <SiCodewars color='#4285f4' size='20px'/>
+              </a>
+            </li>
           </ul>
         </div>
+
         <div className={s.mapBox}>
-
           <MapContainer/>
-
-
         </div>
       </div>
     </div>
-  )
-}
+})
 export default Contacts;
