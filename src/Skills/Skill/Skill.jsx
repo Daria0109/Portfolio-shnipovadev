@@ -3,7 +3,7 @@ import s from './Skill.module.scss'
 
 const Skill = React.memo(({title, icon, description}) => {
   return (
-    <div className={s.skill}>
+    <div className={s.skill} data-aos="zoom-in">
         {icon}
         <h3 className={s.title}>{title}</h3>
         <p className={s.info}>{description}</p>

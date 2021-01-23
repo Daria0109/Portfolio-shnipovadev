@@ -7,10 +7,10 @@ import React from "react";
 
 const Greeting = React.memo(({handleMenu}) => {
   return <div className={s.greeting}>
-    <div className={s.photo}>
+    <div className={s.photo} data-aos="fade-in">
       <img src={photo} alt="Daria Shnipova"/>
     </div>
-    <div className={s.textRight}>
+    <div className={s.textRight} data-aos="fade-in">
       <span className={s.hello}>Hello</span>
       <h1 className={s.name}>I'm <span>Daria Shnipova</span></h1>
       <h4 className={s.positionTitle}>Frontend Developer</h4>

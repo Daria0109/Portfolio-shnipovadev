@@ -3,7 +3,7 @@ import s from './Project.module.scss'
 
 const Project = React.memo(({title, description, image}) => {
   return (
-    <div className={s.project}>
+    <div className={s.project} data-aos="fade-in">
       <div className={s.imageBox}>
         <img className={s.image} src={image} alt="Project"/>
       </div>

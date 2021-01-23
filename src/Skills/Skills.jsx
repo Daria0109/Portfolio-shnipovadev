@@ -8,7 +8,7 @@ const Skills = React.memo(() => {
     <Skill key={skill.title} title={skill.title} icon={skill.icon} description={skill.description}/>)
   return (
     <div className={s.skillsBlock} id='Skills'>
-      <h2 className={s.title}>My <span>Skills</span></h2>
+      <h2 className={s.title} data-aos="fade-in">My <span>Skills</span></h2>
       <div className={s.skills}>
         {skillsElements}
       </div>

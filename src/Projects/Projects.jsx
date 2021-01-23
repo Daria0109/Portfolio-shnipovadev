@@ -11,7 +11,7 @@ const Projects = React.memo(() => {
              image={proj.projectImg}/>)
 
   return <div className={s.projectsBlock} id='Portfolio'>
-    <h2 className={s.title}>My <span>Projects</span></h2>
+    <h2 className={s.title} data-aos="fade-in">My <span>Projects</span></h2>
     <div className={s.projects}>
       {projectElements}
     </div>

@@ -43,6 +43,7 @@
 
     .mapBox {
       @include contactsFormMapBox();
+      display: flex;
     }
   }
 }

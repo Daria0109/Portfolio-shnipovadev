@@ -1,0 +1,23 @@
+@import './../SCSS/mixins';
+@import './../SCSS/variables';
+
+.footer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 20px;
+  text-align: center;
+  font-family: $fontText;
+  color: #94a2c6;
+  font-size: 15px;
+  line-height: 1.625;
+  font-weight: 400;
+  .copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-weight: 600;
+    }
+  }
+}
