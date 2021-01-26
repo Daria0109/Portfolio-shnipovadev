@@ -13,11 +13,12 @@ import 'aos/dist/aos.css'
 function App() {
   useEffect(() => {
     AOS.init({
-      offset: 0,
+      offset: 50,
       duration: 500,
       delay: 100,
       once: false,
     });
+    AOS.refresh()
   }, [])
 
   return <div>

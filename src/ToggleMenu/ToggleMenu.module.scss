@@ -1,14 +1,38 @@
+@import "./../SCSS/mixins";
+@import "./../SCSS/variables";
+
 .toggleMenu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 50px;
   height: 50px;
-  margin-right: 0px;
+  margin-right: 0;
   border-radius: 50%;
   cursor: pointer;
   background: rgba(37, 44, 72, 0.8);
   position: fixed;
   z-index: 1000;
-  box-shadow: 0px 0px 1px 1px #4c84ff;
+  box-shadow: 0 0 1px 1px #4c84ff;
+  span {
+    @include toggleSpan();
+    &:after, &:before {
+      content: '';
+      @include toggleSpan();
+      transition: 0.3s;
+    }
+    &:after {
+      transform: translateY(9px);
+    }
+    &:before {
+      transform: translateY(-9px);
+    }
+  }
+
+}
+.toggleMenu.active span {
+  background-color: rgba(37, 44, 72, 0.8);
+}
+.toggleMenu.active span:before {
+  transform: rotate(40deg);
+}
+.toggleMenu.active span:after {
+  transform: rotate(-40deg);
 }

@@ -4,7 +4,7 @@ import MenuLink from "./MenuLink/MenuLink";
 
 
 const Nav = React.memo(({menuVisible, handleMenu, navLinks}) => {
-  const menu = menuVisible ? `${s.menuArea} ${s.visible}` : `${s.menuArea}`
+  const menuStyle = menuVisible ? `${s.menuArea} ${s.visible}` : `${s.menuArea}`
   const linkElements = navLinks.map(l => {
     const link = l.active ? `${s.navLink} ${s.active}` : `${s.navLink}`
     return <li key={l.id} className={s.navItem}>
@@ -16,15 +16,13 @@ const Nav = React.memo(({menuVisible, handleMenu, navLinks}) => {
     </li>
   })
 
-  return (
-    <div className={menu}>
+  return <div className={menuStyle}>
       <nav className={s.navbar}>
         <ul className={s.navbarLinks}>
           {linkElements}
         </ul>
       </nav>
     </div>
-  )
 })
 export default Nav;
 

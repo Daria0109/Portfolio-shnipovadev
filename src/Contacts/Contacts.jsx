@@ -1,12 +1,23 @@
-import React from "react";
+import React, {useEffect} from "react";
 import s from "./Contacts.module.scss";
 import Contact from "./Contact/Contact";
 import {FaEnvelope, FaGithub, FaLinkedinIn, FaPhone, FaRocket, FaTelegramPlane, SiCodewars} from "react-icons/all";
 import ContactForm from "./Contact/ContactForm";
 import MapContainer from "./Map/MapContainer";
+import AOS from "aos";
 
 
 const Contacts = React.memo(() => {
+  useEffect(() => {
+    AOS.init({
+      offset: 50,
+      duration: 500,
+      delay: 100,
+      once: false,
+    });
+    AOS.refresh()
+  }, [])
+
   return <div className={s.contactsBlock} id='Contacts'>
       <h2 className={s.title} data-aos="fade-in">Contact <span>me</span></h2>
       <div className={s.contacts}>
