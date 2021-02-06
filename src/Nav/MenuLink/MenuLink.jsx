@@ -1,10 +1,16 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import {Link} from "react-scroll";
+import s from './../Nav.module.scss'
 
-const MenuLink = React.memo(({className, id, href, handleMenu, linkName}) => {
-  return <a className={className}
-            id={id}
-            href={href}
-            onClick={() => handleMenu(id)}>{linkName}</a>
+const MenuLink = React.memo(({linkName, className}) => {
+  return (
+    <Link className={className}
+          activeClass={s.active}
+          to={linkName}
+          spy={true}
+          smooth={true}
+          duration={500}
+    >{linkName}</Link>
+  )
 })
 export default MenuLink;

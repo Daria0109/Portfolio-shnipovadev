@@ -123,6 +123,7 @@
 
       .buttonLink {
         text-decoration: none;
+        cursor: pointer;
         @media (max-width: 450px) {
           margin-bottom: 15px;
         }

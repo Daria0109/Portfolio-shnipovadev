@@ -5,6 +5,7 @@ import React from "react";
 import Button from "../Button/Button";
 import {FaBriefcase, FaDownload} from "react-icons/all";
 import Tilt from 'react-tilt'
+import {Link} from "react-scroll";
 
 const Greeting = React.memo(({handleMenu}) => {
   return <div className={s.greeting}>
@@ -28,9 +29,14 @@ const Greeting = React.memo(({handleMenu}) => {
         <a className={s.buttonLink} href={uploadedFileLink} target="_blank" rel="noopener noreferrer" download>
           <Button name='Download my CV' icon={<FaDownload color='white' size={'15px'}/>}/>
         </a>
-        <a className={s.buttonLink} href='#Portfolio' onClick={() => handleMenu(3)}>
+        <Link className={s.buttonLink}
+              to={'Portfolio'}
+              spy={true}
+              smooth={true}
+              duration={500}
+        >
           <Button name='Portfolio' icon={<FaBriefcase color='white' size={'15px'}/>}/>
-        </a>
+        </Link>
       </div>
     </div>
   </div>
