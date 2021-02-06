@@ -1,20 +1,30 @@
 @import './src/SCSS/variables';
 @import './src/SCSS/mixins';
 
-.mainBlock {
-  @include wrapper();
-  //border: 1px solid;
-  position: relative;
-  @media (max-width: 750px) {
-    padding-bottom: 30px;
-  }
-
-  .fixedWrapper {
+.preMainBlock {
+  .particles {
     position: absolute;
-    width: 50px;
-    height: auto;
-    right: 15px;
-    top: 15px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+  }
+  .mainBlock {
+    @include wrapper();
+    //border: 1px solid;
+    position: relative;
+    @media (max-width: 750px) {
+      padding-bottom: 30px;
+    }
+
+    .fixedWrapper {
+      position: absolute;
+      width: 50px;
+      height: auto;
+      right: 15px;
+      top: 15px;
+    }
   }
 }
 

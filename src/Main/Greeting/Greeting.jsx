@@ -1,16 +1,19 @@
 import s from "./Greeting.module.scss";
 import photo from "../../assets/avatar.jpg";
 import uploadedFileLink from "../../files/JuniorQA_DariaShnipova.pdf";
+import React from "react";
 import Button from "../Button/Button";
 import {FaBriefcase, FaDownload} from "react-icons/all";
-import React from "react";
+import Tilt from 'react-tilt'
 
 const Greeting = React.memo(({handleMenu}) => {
   return <div className={s.greeting}>
-    <div className={s.photo} data-aos="fade-in">
-      <img src={photo} alt="Daria Shnipova"/>
+    <div className={s.photo}>
+      <Tilt className="Tilt" options={{max: 25, scale: 1}}>
+        <img src={photo} alt="Daria Shnipova"/>
+      </Tilt>
     </div>
-    <div className={s.textRight} data-aos="fade-in">
+    <div className={s.textRight}>
       <span className={s.hello}>Hello</span>
       <h1 className={s.name}>I'm <span>Daria Shnipova</span></h1>
       <h4 className={s.positionTitle}>Frontend Developer</h4>
