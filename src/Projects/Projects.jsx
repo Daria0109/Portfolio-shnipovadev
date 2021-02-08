@@ -11,7 +11,8 @@ const Projects = React.memo(() => {
     <Project key={proj.title}
              title={proj.title}
              description={proj.description}
-             image={proj.projectImg}/>)
+             image={proj.projectImg}
+             demoLink={proj.demoLink} sourceCodeLink={proj.sourceCodeLink}/>)
 
   return <Fade>
     <div className={s.projectsBlock} id='Portfolio'>

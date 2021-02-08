@@ -24,6 +24,7 @@
   }
 
   .details {
+    height: 40%;
     padding: 40px 20px 25px;
     display: flex;
     flex-direction: column;
@@ -45,6 +46,7 @@
       @include font(16px, 200);
       line-height: 1;
       text-transform: uppercase;
+      letter-spacing: 2px;
       text-decoration: none;
       white-space: nowrap;
       margin-bottom: 10px;
