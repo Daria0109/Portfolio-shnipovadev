@@ -1,26 +1,32 @@
 {
   "files": {
-    "main.css": "/Portfolio_shnipovadev/static/css/main.b6f0ef50.chunk.css",
-    "main.js": "/Portfolio_shnipovadev/static/js/main.d8a65e0b.chunk.js",
-    "main.js.map": "/Portfolio_shnipovadev/static/js/main.d8a65e0b.chunk.js.map",
-    "runtime-main.js": "/Portfolio_shnipovadev/static/js/runtime-main.a9b5091e.js",
-    "runtime-main.js.map": "/Portfolio_shnipovadev/static/js/runtime-main.a9b5091e.js.map",
-    "static/js/2.d9ade2c9.chunk.js": "/Portfolio_shnipovadev/static/js/2.d9ade2c9.chunk.js",
-    "static/js/2.d9ade2c9.chunk.js.map": "/Portfolio_shnipovadev/static/js/2.d9ade2c9.chunk.js.map",
-    "static/js/3.190733ab.chunk.js": "/Portfolio_shnipovadev/static/js/3.190733ab.chunk.js",
-    "static/js/3.190733ab.chunk.js.map": "/Portfolio_shnipovadev/static/js/3.190733ab.chunk.js.map",
+    "main.css": "/Portfolio_shnipovadev/static/css/main.b3848515.chunk.css",
+    "main.js": "/Portfolio_shnipovadev/static/js/main.21d63f32.chunk.js",
+    "main.js.map": "/Portfolio_shnipovadev/static/js/main.21d63f32.chunk.js.map",
+    "runtime-main.js": "/Portfolio_shnipovadev/static/js/runtime-main.a6ed488c.js",
+    "runtime-main.js.map": "/Portfolio_shnipovadev/static/js/runtime-main.a6ed488c.js.map",
+    "static/js/2.47f5fad8.chunk.js": "/Portfolio_shnipovadev/static/js/2.47f5fad8.chunk.js",
+    "static/js/2.47f5fad8.chunk.js.map": "/Portfolio_shnipovadev/static/js/2.47f5fad8.chunk.js.map",
+    "static/js/3.5279ef2e.chunk.js": "/Portfolio_shnipovadev/static/js/3.5279ef2e.chunk.js",
+    "static/js/3.5279ef2e.chunk.js.map": "/Portfolio_shnipovadev/static/js/3.5279ef2e.chunk.js.map",
     "index.html": "/Portfolio_shnipovadev/index.html",
-    "static/css/main.b6f0ef50.chunk.css.map": "/Portfolio_shnipovadev/static/css/main.b6f0ef50.chunk.css.map",
-    "static/js/2.d9ade2c9.chunk.js.LICENSE.txt": "/Portfolio_shnipovadev/static/js/2.d9ade2c9.chunk.js.LICENSE.txt",
+    "static/css/main.b3848515.chunk.css.map": "/Portfolio_shnipovadev/static/css/main.b3848515.chunk.css.map",
+    "static/js/2.47f5fad8.chunk.js.LICENSE.txt": "/Portfolio_shnipovadev/static/js/2.47f5fad8.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/Portfolio_shnipovadev/static/media/OpenSans-Regular.1b0809d5.ttf",
     "static/media/JuniorQA_DariaShnipova.7a106613.pdf": "/Portfolio_shnipovadev/static/media/JuniorQA_DariaShnipova.7a106613.pdf",
     "static/media/avatar.987a7f65.jpg": "/Portfolio_shnipovadev/static/media/avatar.987a7f65.jpg",
-    "static/media/project.e91e08f8.png": "/Portfolio_shnipovadev/static/media/project.e91e08f8.png"
+    "static/media/calculator-project.c055748d.png": "/Portfolio_shnipovadev/static/media/calculator-project.c055748d.png",
+    "static/media/counter-project.87d68ad2.png": "/Portfolio_shnipovadev/static/media/counter-project.87d68ad2.png",
+    "static/media/estate-project.2d1fae0a.png": "/Portfolio_shnipovadev/static/media/estate-project.2d1fae0a.png",
+    "static/media/password-project.0ea29570.png": "/Portfolio_shnipovadev/static/media/password-project.0ea29570.png",
+    "static/media/project.e91e08f8.png": "/Portfolio_shnipovadev/static/media/project.e91e08f8.png",
+    "static/media/quote-project.71910646.png": "/Portfolio_shnipovadev/static/media/quote-project.71910646.png",
+    "static/media/todolist-project.0219c1e9.png": "/Portfolio_shnipovadev/static/media/todolist-project.0219c1e9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9b5091e.js",
-    "static/js/2.d9ade2c9.chunk.js",
-    "static/css/main.b6f0ef50.chunk.css",
-    "static/js/main.d8a65e0b.chunk.js"
+    "static/js/runtime-main.a6ed488c.js",
+    "static/js/2.47f5fad8.chunk.js",
+    "static/css/main.b3848515.chunk.css",
+    "static/js/main.21d63f32.chunk.js"
   ]
 }
