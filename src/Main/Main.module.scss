@@ -8,12 +8,15 @@
     left: 0;
     bottom: 0;
     right: 0;
-    opacity: 0.3;
+    opacity: 0.2;
   }
   .mainBlock {
     @include wrapper();
-    //border: 1px solid;
+    min-height: 100vh;
     position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 750px) {
       padding-bottom: 30px;
     }

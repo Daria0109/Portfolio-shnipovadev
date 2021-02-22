@@ -2,8 +2,6 @@ import React from 'react';
 import s from './Projects.module.scss';
 import Project from "./Project/Project";
 import {projects} from './projects-state'
-import Zoom from 'react-reveal/Zoom';
-import Fade from "react-reveal/Fade";
 
 
 const Projects = React.memo(() => {
@@ -14,16 +12,12 @@ const Projects = React.memo(() => {
              image={proj.projectImg}
              demoLink={proj.demoLink} sourceCodeLink={proj.sourceCodeLink}/>)
 
-  return <Fade>
-    <div className={s.projectsBlock} id='Portfolio'>
-      <Zoom>
+  return <div className={s.projectsBlock} id='Portfolio'>
         <h2 className={s.title}>My <span>Projects</span></h2>
-      </Zoom>
       <div className={s.projects}>
         {projectElements}
       </div>
     </div>
-  </Fade>
 })
 
 export default Projects;

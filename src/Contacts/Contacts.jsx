@@ -4,21 +4,16 @@ import Contact from "./Contact/Contact";
 import {FaEnvelope, FaGithub, FaLinkedinIn, FaPhone, FaRocket, FaTelegramPlane, SiCodewars} from "react-icons/all";
 import ContactForm from "./Contact/ContactForm";
 import MapContainer from "./Map/MapContainer";
-import Zoom from 'react-reveal/Zoom';
-import Fade from "react-reveal/Fade";
 
 
 const Contacts = React.memo(() => {
-  return <Fade>
-  <div className={s.contactsBlock} id='Contacts'>
-    <Zoom>
+  return <div className={s.contactsBlock} id='Contacts'>
       <h2 className={s.title}>Contact <span>me</span></h2>
-    </Zoom>
     <div className={s.contacts}>
       <Contact icon={<FaRocket color='#4285f4' size='25px'/>} name='My location:'
                info='Minsk city, Republic of Belarus'/>
       <Contact icon={<FaPhone color='#4285f4' size='25px'/>} name='Phone number:' info='+375 29 513 92 66'/>
-      <Contact icon={<FaEnvelope color='#4285f4' size='25px'/>} name='Email Address:' info='emailemail@gmail.com'/>
+      <Contact icon={<FaEnvelope color='#4285f4' size='25px'/>} name='Email Address:' info='dshnipova@gmail.com'/>
 
       <div className={s.formBox}>
         <ContactForm/>
@@ -51,6 +46,5 @@ const Contacts = React.memo(() => {
       </div>
     </div>
   </div>
-  </Fade>
 })
 export default Contacts;

@@ -6,12 +6,35 @@
 
   .title {
     @include blockTitle();
+    @media (max-width: 650px) {
+      margin-bottom: 55px;
+    }
   }
 
   .skills {
-    @include flexBlockForCards();
-    @media (max-width: 750px) {
+    @media (max-width: 975px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    @media (max-width: 650px) {
+      display: flex;
+      align-items: center;
       justify-content: center;
+      flex-direction: column;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 90px;
+      @media (max-width: 975px) {
+        display: block;
+        margin-top: 50px;
+      }
+      @media (max-width: 650px) {
+        margin-top: 0;
+      }
     }
   }
 }

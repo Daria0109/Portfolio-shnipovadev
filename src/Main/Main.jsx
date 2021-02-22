@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from 'react';
+import React, {useState} from 'react';
 import s from './Main.module.scss';
 import Nav from "../Nav/Nav";
 import ToggleMenu from "../ToggleMenu/ToggleMenu";
@@ -17,7 +17,6 @@ const particlesOpt = {
     }
   }
 }
-
 
 
 const Main = React.memo(() => {

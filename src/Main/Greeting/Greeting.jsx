@@ -1,6 +1,6 @@
 import s from "./Greeting.module.scss";
 import photo from "../../assets/avatar.jpg";
-import uploadedFileLink from "../../files/JuniorQA_DariaShnipova.pdf";
+import uploadedFileLink from "../../files/Frontend(React)_Shnipova.pdf";
 import React from "react";
 import Button from "../Button/Button";
 import {FaBriefcase, FaDownload} from "react-icons/all";
@@ -19,11 +19,11 @@ const Greeting = React.memo(({handleMenu}) => {
       <h1 className={s.name}>I'm <span>Daria Shnipova</span></h1>
       <h4 className={s.positionTitle}>Frontend Developer</h4>
       <p className={s.info}>
-        With over 5+ years of job experience.
-        I studied Information Technology at University and later honed
-        my skills through commercial and freelance experience.
-        My skills include PHP, Laravel, jQuery, database design,
-        JavaScript and MySQL.
+        Welcome to my portfolio site.<br/>
+        I'm a result oriented, enthusiastic and stress-resistant  Frontend developer with experience in
+        creating landing pages and SPA with the usage of React, Redux, JavaScript, CSS3, HTML5.<br/>
+        I'm also a positive and sociable person who easily finds a common language with people and has a
+        great desire to improve myself as a developer and learn new technologies.
       </p>
       <div className={s.buttons}>
         <a className={s.buttonLink} href={uploadedFileLink} target="_blank" rel="noopener noreferrer" download>
