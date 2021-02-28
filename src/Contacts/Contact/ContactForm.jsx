@@ -37,7 +37,12 @@ const ContactForm = React.memo(() => {
         email: values.email,
         subject: values.subject,
         message: values.message
-      }).then((res) => setDisabledBtn(false))
+      }).then((res) => {
+        setDisabledBtn(false);
+        formik.resetForm({
+          values: {name: '', email: '', subject: '', message: '', }
+        })
+      })
     },
   });
 
