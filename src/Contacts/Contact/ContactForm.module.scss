@@ -16,11 +16,20 @@ input, textarea {
   color: $fontColor;
   outline: none;
 }
-
-textarea {
-  resize: vertical;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active{
+  -webkit-text-fill-color: $fontColor;
+  -webkit-box-shadow: 0 0 0 1000px $secondColor inset;
 }
-
+textarea {
+  resize: none;
+}
 input::placeholder, textarea::placeholder {
   color: #94a2c6;
 }
@@ -33,6 +42,14 @@ input::placeholder, textarea::placeholder {
     flex-basis: 100%;
     padding-top: 7px;
     padding-bottom: 7px;
+    position: relative;
+    .textRequired {
+      color: rgba(255, 000, 000, 0.6);
+      font-size: 15px;
+      position: absolute;
+      right: 3px;
+      top: 14px;
+    }
   }
 
   .top {
@@ -50,10 +67,19 @@ input::placeholder, textarea::placeholder {
     }
 
     .email {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       flex-basis: 48%;
+      position: relative;
       @media (max-width: 990px) {
           width: 100%;
       }
+    }
+    .required {
+      color: rgba(255, 000, 000, 0.6);
+      font-size: 15px;
+      position: absolute;
+      right: 3px;
+      top: 12px;
     }
   }
 
@@ -66,12 +92,18 @@ input::placeholder, textarea::placeholder {
     @include font(14px, 200);
     text-transform: uppercase;
     outline: none;
-    margin-top: 10px;
+    margin-top: 13px;
     cursor: pointer;
 
     &:hover, &:active {
       background: $secondColor;
       transition-duration: 0.5s;
+    }
+  }
+  .disabledBtn {
+    background-color: #89b9ff;
+    &:hover, &:active {
+      background-color: #89b9ff;
     }
   }
 }

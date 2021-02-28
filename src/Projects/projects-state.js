@@ -1,4 +1,3 @@
-import projectImg1 from './../assets/project.png';
 import todolistImg from './../assets/todolist-project.png';
 import counterImg from './../assets/counter-project.png';
 import quoteImg from './../assets/quote-project.png';
@@ -9,7 +8,7 @@ import estateImg from './../assets/estate-project.png'
 export const projects = [
   {
     title: 'Todolist',
-    description: 'STACK: React, TypeScript, Redux, Material UI, Formik,' +
+    description: 'STACK: React, TypeScript, Redux, Redux Toolkit, Material UI, Formik,' +
       'Redux-thunk, Axios, React-router-dom',
     projectImg: todolistImg,
     demoLink: 'https://daria0109.github.io/Todolist_ReactTS',
