@@ -1,18 +1,17 @@
 import todolistImg from './../assets/todolist-project.png';
 import counterImg from './../assets/counter-project.png';
 import quoteImg from './../assets/quote-project.png';
-import calcImg from './../assets/calculator-project.png';
 import passwordImg from './../assets/password-project.png';
-import estateImg from './../assets/estate-project.png'
+import estateImg from './../assets/estate-project.png';
+import cardsImg from './../assets/cards-project.png'
 
 export const projects = [
   {
-    title: 'Todolist',
-    description: 'STACK: React, TypeScript, Redux, Redux Toolkit, Material UI, Formik,' +
-      'Redux-thunk, Axios, React-router-dom',
-    projectImg: todolistImg,
-    demoLink: 'https://daria0109.github.io/Todolist_ReactTS',
-    sourceCodeLink: 'https://github.com/Daria0109/Todolist_ReactTS'
+    title: 'Smart cards',
+    description: 'STACK: React, Redux, TypeScript, SCSS, REST API, Redux-thunk, Axios, React-router-dom',
+    projectImg: cardsImg,
+    demoLink: 'https://daria0109.github.io/Cards_ReactTS',
+    sourceCodeLink: 'https://github.com/Daria0109/Cards_ReactTS'
   },
   {
     title: 'Counter',
@@ -29,12 +28,20 @@ export const projects = [
     sourceCodeLink: 'https://github.com/Daria0109/QuotesGenerator_JS'
   },
   {
-    title: 'Calculator',
-    description: 'STACK: JavaScript, CSS3, HTML5',
-    projectImg: calcImg,
-    demoLink: 'https://daria0109.github.io/Calculator_JS',
-    sourceCodeLink: 'https://github.com/Daria0109/Calculator_JS'
+    title: 'Todolist',
+    description: 'STACK: React, TypeScript, Redux, Redux Toolkit, Material UI, Formik,' +
+      'REST API, Redux-thunk, Axios, React-router-dom',
+    projectImg: todolistImg,
+    demoLink: 'https://daria0109.github.io/Todolist_ReactTS',
+    sourceCodeLink: 'https://github.com/Daria0109/Todolist_ReactTS'
   },
+  // {
+  //   title: 'Calculator',
+  //   description: 'STACK: JavaScript, CSS3, HTML5',
+  //   projectImg: calcImg,
+  //   demoLink: 'https://daria0109.github.io/Calculator_JS',
+  //   sourceCodeLink: 'https://github.com/Daria0109/Calculator_JS'
+  // },
   {
     title: 'Password generator',
     description: 'STACK: JavaScript, CSS3, HTML5',
