@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio_shnipovadev/static/css/main.c0899558.chunk.css",
-    "main.js": "/Portfolio_shnipovadev/static/js/main.1a383354.chunk.js",
-    "main.js.map": "/Portfolio_shnipovadev/static/js/main.1a383354.chunk.js.map",
+    "main.js": "/Portfolio_shnipovadev/static/js/main.dde98ecc.chunk.js",
+    "main.js.map": "/Portfolio_shnipovadev/static/js/main.dde98ecc.chunk.js.map",
     "runtime-main.js": "/Portfolio_shnipovadev/static/js/runtime-main.f9cfe4e7.js",
     "runtime-main.js.map": "/Portfolio_shnipovadev/static/js/runtime-main.f9cfe4e7.js.map",
     "static/js/2.58c3d7a0.chunk.js": "/Portfolio_shnipovadev/static/js/2.58c3d7a0.chunk.js",
@@ -12,7 +12,7 @@
     "index.html": "/Portfolio_shnipovadev/index.html",
     "static/css/main.c0899558.chunk.css.map": "/Portfolio_shnipovadev/static/css/main.c0899558.chunk.css.map",
     "static/js/2.58c3d7a0.chunk.js.LICENSE.txt": "/Portfolio_shnipovadev/static/js/2.58c3d7a0.chunk.js.LICENSE.txt",
-    "static/media/CV Darya Shnipova_Frontend Developer.2a231b15.pdf": "/Portfolio_shnipovadev/static/media/CV Darya Shnipova_Frontend Developer.2a231b15.pdf",
+    "static/media/CV_Darya Shnipova_Frontend Developer.2a231b15.pdf": "/Portfolio_shnipovadev/static/media/CV_Darya Shnipova_Frontend Developer.2a231b15.pdf",
     "static/media/index.scss": "/Portfolio_shnipovadev/static/media/OpenSans-Regular.1b0809d5.ttf",
     "static/media/avatar.987a7f65.jpg": "/Portfolio_shnipovadev/static/media/avatar.987a7f65.jpg",
     "static/media/cards-project.4fb95c69.png": "/Portfolio_shnipovadev/static/media/cards-project.4fb95c69.png",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.f9cfe4e7.js",
     "static/js/2.58c3d7a0.chunk.js",
     "static/css/main.c0899558.chunk.css",
-    "static/js/main.1a383354.chunk.js"
+    "static/js/main.dde98ecc.chunk.js"
   ]
 }
