@@ -1,6 +1,6 @@
 import s from "./Greeting.module.scss";
 import photo from "../../assets/avatar.jpg";
-import uploadedFileLink from "../../files/Frontend(React)_Shnipova.pdf";
+import uploadedFileLink from "../../files/CV Darya Shnipova_Frontend Developer.pdf";
 import React from "react";
 import Button from "../Button/Button";
 import {FaBriefcase, FaDownload} from "react-icons/all";
