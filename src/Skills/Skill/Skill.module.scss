@@ -14,10 +14,20 @@
   @media (max-width: 975px) {
     margin-bottom: 90px;
   }
+  @media (max-width: 670px) {
+    transform: none;
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    margin-bottom: 30px;
+  }
 
   .inner {
     text-align: center;
     transform: rotate(45deg);
+    @media (max-width: 670px) {
+      transform: none;
+    }
 
     .title {
       @include fontTitle(20px, 500);

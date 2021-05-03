@@ -14,7 +14,7 @@ const Greeting = React.memo(({handleMenu}) => {
         <img src={photo} alt="Daria Shnipova"/>
       </Tilt>
     </div>
-    <div className={s.textRight}>
+    <div data-aos="fade-up" data-aos-delay="500" data-aos-once="true" className={s.textRight}>
       <span className={s.hello}>Hello</span>
       <h1 className={s.name}>I'm <span>Daria Shnipova</span></h1>
       <h4 className={s.positionTitle}>Frontend Developer</h4>

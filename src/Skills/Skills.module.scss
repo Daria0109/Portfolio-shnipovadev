@@ -17,12 +17,6 @@
       align-items: center;
       justify-content: space-around;
     }
-    @media (max-width: 650px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
     .row {
       display: flex;
       align-items: center;

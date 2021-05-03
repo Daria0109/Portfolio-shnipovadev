@@ -13,7 +13,7 @@ const Projects = React.memo(() => {
              demoLink={proj.demoLink} sourceCodeLink={proj.sourceCodeLink}/>)
 
   return <div className={s.projectsBlock} id='Portfolio'>
-        <h2 className={s.title}>My <span>Projects</span></h2>
+        <h2 data-aos="fade-up" data-aos-offset="300" data-aos-once="true" className={s.title}>My <span>Projects</span></h2>
       <div className={s.projects}>
         {projectElements}
       </div>

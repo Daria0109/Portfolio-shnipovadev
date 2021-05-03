@@ -44,6 +44,10 @@
     .mapBox {
       @include contactsFormMapBox();
       display: flex;
+      @media (max-width: 1034px) {
+        height: 350px;
+        width: 100%;
+      }
     }
   }
 }

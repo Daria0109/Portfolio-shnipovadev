@@ -4,7 +4,6 @@ import Nav from "../Nav/Nav";
 import ToggleMenu from "../ToggleMenu/ToggleMenu";
 import Greeting from "./Greeting/Greeting";
 import Particles from 'react-particles-js';
-import Fade from 'react-reveal/Fade';
 
 const particlesOpt = {
   'particles': {
@@ -29,9 +28,7 @@ const Main = React.memo(() => {
           <ToggleMenu menuVisible={menuVisible} setMenuVisible={setMenuVisible}/>
             <Nav menuVisible={menuVisible} />
         </div>
-        <Fade>
         <Greeting/>
-        </Fade>
       </div>
 
   </div>

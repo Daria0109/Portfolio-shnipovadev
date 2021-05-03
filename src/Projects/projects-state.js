@@ -11,7 +11,7 @@ export const projects = [
     description: 'STACK: React, TypeScript, SCSS, REST API, Axios, React-router-dom',
     projectImg: project1,
     demoLink: 'https://imcraving.com',
-    sourceCodeLink: 'https://github.com/Daria0109/Cards_ReactTS'
+    sourceCodeLink: 'https://github.com/Daria0109/im-craving'
   },
   {
     title: 'Todolist',
